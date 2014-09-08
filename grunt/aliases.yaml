@@ -1,0 +1,27 @@
+default:
+    - 'watch'
+
+build:
+    - 'clean'
+    - 'includes:html'
+    - 'imagemin:sprites'
+    - 'compass:out'
+    - 'imagemin:images'
+    - 'csscomb:css'
+    - 'cmq'
+    - 'csso:compress'
+    - 'compress:main'
+
+validate:
+    - 'validation'
+    - 'jshint'
+    - 'csslint'
+
+postcss:
+    - 'compass:out'
+    - 'csscomb:css'
+    - 'csso:compress'
+    - 'cmq'
+
+tozip:
+    - 'compress:main'
