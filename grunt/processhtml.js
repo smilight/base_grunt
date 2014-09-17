@@ -5,8 +5,16 @@ module.exports = {
         }
     },
     dist: {
-        files: {
-            'app/index1.html': ['app/index.html']
+        files:{
+            expand: true,
+            cwd: 'html/',
+            src: ['*.html'],
+            dest: 'app/',
+            ext: '.html'
         }
+
+//        files: {
+//            'app/*.html': ['html/*.html']
+//        }
     }
 };

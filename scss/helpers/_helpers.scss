@@ -1,0 +1,70 @@
+// pseudo elements
+%pseudos {
+	content: '';
+	position: absolute;
+}
+
+@mixin p-el(
+$el,
+$el-width,
+$el-height) {
+	@if $el == "before" or $el == "after" {
+		&:#{$el} {
+			@extend %pseudos;
+			width: $el-width;
+			height: $el-height;
+			@content;
+		}
+	}
+	@else {
+		@error "`#{$el}` is not a valid pseudo-element.";
+	}
+}
+
+// :hover, :active, :focus Styles
+@mixin hoverActiveFocus($property, $value) {
+	&:hover, &:active, &:focus {
+		#{$property}: $value;
+	}
+}
+
+// make circle
+@mixin circle($size) {
+	width: $size;
+	height: $size;
+	border-radius: 100%;
+}
+
+// blcak transparent color
+@function black($opacity){
+	@return rgba(0,0,0,$opacity)
+}
+
+// centering block
+%center-block{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+//add 3dots to end of text
+%text-truncate {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+// calculate pixels to em
+@function em($target, $context: $base-font-size) {
+	@if $target == 0 { @return 0 }
+	@return $target / $context + 0em;
+}
+
+//calculate pixels to percent
+@function calc-percent($target, $container) {
+	@return ($target / $container) * 100%;
+}
+
+@function cp($target, $container) {
+	@return calc-percent($target, $container);
+}

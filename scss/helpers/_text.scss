@@ -1,0 +1,9 @@
+// hide text at all
+%hide-text{
+	text-indent: -9999px;
+	overflow: hidden;
+	text-decoration: none;
+	display: block;
+	font-size: 0;
+	text-align: start;
+}
