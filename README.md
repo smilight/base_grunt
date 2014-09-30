@@ -1,9 +1,9 @@
 base_grunt template for front end
 ==========
 
-## Instalation 
+## Installation
 
-+   Unpack archive master.zip. Open unpacked folder in your IntelliJ editor;
++   Unpack archive [master.zip](https://github.com/smilight/base_grunt/archive/master.zip). Open unpacked folder in your IntelliJ editor;
 
 +   Install node.js and make allowed thru terminal.  Node.js [download link](http://nodejs.org/download/). Test if node.js installed properly: type in terminal ```node -v``` or ```npm -v```;
 
@@ -75,11 +75,11 @@ Default grunt configuration “gruntfile.js”. For more settings or to add plug
 - [time-grunt](https://github.com/sindresorhus/time-grunt)
 
 
-### Directory Structure
+### Directories Structure
 
 
 -  app (*compiled html, styles, sprites*)
--  grunt (*all grunt plugins setings*)
+-  grunt (*all grunt plugins settings*)
 -  html (*all parts of html to compile*) *to include html file to another type ```include "path_to_your_file/file_without_extension```*
 -  scss (*sass files*)
 -  reports (*js,css,html validation reports*)
@@ -92,8 +92,10 @@ All template options in ```gruntfile.js``` file.
 Available options:
 
 ####    projectName
+your project name
+
 ####    appDir
-your aplication directory where will be all compiled files
+your application directory where will be all compiled files
 
 ####   reportDir
 js,css,html validation reports directory
