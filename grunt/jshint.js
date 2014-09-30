@@ -13,7 +13,7 @@ module.exports = {
             reporterOutput: '<%= config.reportDir %>/jshint.html'
         },
         files: {
-            src: ['<%= config.scripts %>/*.js']
+            src: ['<%= config.scriptsDir %>/*.js']
         }
     }
 };

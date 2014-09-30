@@ -2,16 +2,16 @@ module.exports = {
 
     scss: {
         expand: true,
-        cwd: '<%= config.sass %>',
-        src: ['**/*.scss'],
-        dest: '<%= config.sass %>',
+        cwd: '<%= config.sassDir %>',
+        src: ['**/<%= config.sassfiles %>'],
+        dest: '<%= config.sassDir %>',
         ext: '.scss'
     },
     css: {
         expand: true,
-        cwd: '<%= config.css %>',
+        cwd: '<%= config.cssDir %>',
         src: ['**/*.css', '!.min.css'],
-        dest: '<%= config.css %>',
+        dest: '<%= config.cssDir %>',
         ext: '.css'
     }
 };

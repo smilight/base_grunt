@@ -1,15 +1,15 @@
 module.exports = {
     dist: {
         options: {
-            sassDir: 'scss',
-            cssDir: '<%= config.css %>',
-            generatedImagesDir: '<%= config.images %>',
-            imagesDir: '<%= config.sprite %>',
-            javascriptsDir: '<%= config.scripts %>',
-            fontsDir: '<%= config.fonts %>',
+            sassDir: '<%= config.sassDir %>',
+            cssDir: '<%= config.cssDir %>',
+            generatedImagesDir: '<%= config.imagesDir %>',
+            imagesDir: '<%= config.spriteDir %>',
+            javascriptsDir: '<%= config.scriptsDir %>',
+            fontsDir: '<%= config.fontsDir %>',
             http_images_path : '../img',
             httpGeneratedImagesPath: '../img',
-            httpFontsPath: '<%= config.fonts %>',
+            httpFontsPath: '<%= config.fontsDir %>',
             relativeAssets: false,
             assetCacheBuster: false,
             noLineComments: true,
@@ -32,21 +32,21 @@ module.exports = {
                         end\n\
                     ",
             outputStyle: 'compact'
-        },
+        }
 //        src: ['<%= config.sass %>/*<%= config.sassfiles %>'],
 //        dest: '<%= config.css %>'
     },
     out: {
         options: {
-            sassDir: 'scss',
-            cssDir: '<%= config.css %>',
-            generatedImagesDir: '<%= config.images %>',
-            imagesDir: '<%= config.sprite %>',
-            javascriptsDir: '<%= config.scripts %>',
-            fontsDir: '<%= config.fonts %>',
+            sassDir: '<%= config.sassDir %>',
+            cssDir: '<%= config.cssDir %>',
+            generatedImagesDir: '<%= config.imagesDir %>',
+            imagesDir: '<%= config.spriteDir %>',
+            javascriptsDir: '<%= config.scriptsDir %>',
+            fontsDir: '<%= config.fontsDir %>',
             http_images_path : '../img',
             httpGeneratedImagesPath: '../img',
-            httpFontsPath: '<%= config.fonts %>',
+            httpFontsPath: '<%= config.fontsDir %>',
             relativeAssets: false,
             assetCacheBuster: false,
             noLineComments: true,
@@ -75,15 +75,15 @@ module.exports = {
     },
     watch: {
         options: {
-            sassDir: 'scss',
-            cssDir: '<%= config.css %>',
-            generatedImagesDir: '<%= config.images %>',
-            imagesDir: '<%= config.sprite %>',
-            javascriptsDir: '<%= config.scripts %>',
-            fontsDir: '<%= config.fonts %>',
+            sassDir: '<%= config.sassDir %>',
+            cssDir: '<%= config.cssDir %>',
+            generatedImagesDir: '<%= config.imagesDir %>',
+            imagesDir: '<%= config.spriteDir %>',
+            javascriptsDir: '<%= config.scriptsDir %>',
+            fontsDir: '<%= config.fontsDir %>',
             http_images_path : '../img',
             httpGeneratedImagesPath: '../img',
-            httpFontsPath: '<%= config.fonts %>',
+            httpFontsPath: '<%= config.fontsDir %>',
             relativeAssets: false,
             assetCacheBuster: false,
             raw: "\
@@ -104,8 +104,8 @@ module.exports = {
                     ",
             watch:true,
         },
-        src: ['<%= config.sass %>/**'],
-        dest: '<%= config.css %>'
+        src: ['<%= config.sassDir %>/**'],
+        dest: '<%= config.cssDir %>'
     },
 
     test:{
@@ -113,7 +113,7 @@ module.exports = {
             livereload: true
         },
         css: {
-            files: ['<%= config.sass %>/*<%= config.sassfiles %>'],
+            files: ['<%= config.sassDir %>/*<%= config.sassfiles %>'],
             tasks: ['compass:dist']
         }
     }

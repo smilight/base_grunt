@@ -1,26 +1,26 @@
 {
-    "name": "base_html",
-    "version": "0.0.1",
-    "moduleType": [
-        "node"
-    ],
-    "license": "MIT",
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "components",
-        "test",
-        "tests"
-    ],
-    "dependencies": {
-        "jquery": "*"
-    },
-    "exportsOverride": {
-        "*": {
-            "js": "**/*.js",
-            "css": "**/*.css"
-        }
+  "name": "base_html",
+  "version": "0.0.1",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "Scroller": "~3.0.5",
+    "jquery": "~2.1.1"
+  },
+  "exportsOverride": {
+    "*": {
+      "js": "**/*.js",
+      "css": "**/*.css"
     }
-
+  }
 }

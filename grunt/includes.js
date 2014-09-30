@@ -9,9 +9,9 @@ module.exports = {
         },
         files: [
             {
-                cwd: '<%= config.htmlPath %>/',
+                cwd: '<%= config.htmlDir %>/',
                 src: ['*.html'],
-                dest: '<%= config.appDir %>',
+                dest: '<%= config.appDir %>'
             }
         ]
     }

@@ -7,35 +7,7 @@ module.exports = {
             ]
         },
         files: {
-            src: ['<%= config.css %>/*.css']
+            src: ['<%= config.cssDir %>/*.css']
         }
     }
-
-//    options: {
-////        cache: false
-//    },
-//    dist: {
-//        files: [{
-//            expand: true,
-//            cwd: '<%= config.css %>/',
-//            src: ['<%= config.css %>/*.{css}']
-//        }]
-//    }
-//    csslint: {
-//        options: {
-//            force: true,
-//            import: false,
-//            formaters: ['compact'],
-//            absoluteFilePathsForFormatters: true
-//
-//        },
-//files:{
-//    src: ['<%= config.css %>/style.css']
-//}
-//    }
 };
-
-
-
-
-

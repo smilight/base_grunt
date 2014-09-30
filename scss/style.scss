@@ -1,19 +1,23 @@
 
-@import 'config_sass';
+//@import 'config_sass';
 @import 'compass';
 @import 'compass/reset';
 @import 'compass/utilities/sprites';
 
-@import 'mixins/clearfix';
-@import 'mixins/grid';
+@import "theme/responsive";
+@import "theme/color";
+@import "theme/typography";
 
-@import 'misc/extends';
+@import 'helpers/clearfix';
+@import 'helpers/grid';
 
-@import 'misc/base';
-@import 'blocks/header';
-@import 'blocks/content';
-@import 'blocks/footer';
+@import 'helpers/helpers';
 
-@import 'misc/icons';
+@import 'layout/base';
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';
+
+@import 'utils/icons';
 
 

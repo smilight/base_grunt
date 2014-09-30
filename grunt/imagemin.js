@@ -7,18 +7,18 @@ module.exports = {
     sprites:{
         files:[{
             expand: true,
-            cwd: '<%= config.sprite %>',
+            cwd: '<%= config.spriteDir %>',
             src: ["**/*.{png,jpg,gif}"],
-            dest: '<%= config.sprite %>'
+            dest: '<%= config.spriteDir %>'
         }]
     },
 
     images: {
         files: [{
             expand: true,
-            cwd: '<%= config.images %>',
+            cwd: '<%= config.imagesDir %>',
             src: ["**/*.{png,jpg,gif}"],
-            dest: '<%= config.images %>'
+            dest: '<%= config.imagesDir %>'
         }]
     },
 

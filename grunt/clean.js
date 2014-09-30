@@ -1,3 +1,3 @@
 module.exports = {
-    html: ["<%= config.appDir %>/*.html", "<%= config.css %>/*"],
+    html: ["<%= config.appDir %>/*.html", "<%= config.cssDir %>/*"]
 };

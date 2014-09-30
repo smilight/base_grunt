@@ -1,26 +1,41 @@
 module.exports = {
     options: {
         livereload: {
-//            port: 9000,
-//            tasks: ['notify:server']
+            port: '<%= config.livereloadPort %>'
         }
-
     },
     css: {
-        files: ['scss/**'],
-        tasks: ['compass:dist']
+        files: ['<%= config.sassDir %>/**'],
+        tasks: ['compass:dist'],
+        options:{
+            atBegin:true,
+//            spawn: false,
+            reload:true
+        }
 
     },
     configFiles: {
         files: [ 'gruntfile.js', './grunt/*.js' ],
-        options: {
+        options:{
+//            spawn: false,
+            reload: true
+        }
+    },
+    bowerFiles:{
+        files:['./bower/**'],
+        tasks:['wiredep'],
+        options:{
+            atBegin:true,
+//            spawn: false,
             reload: true
         }
     },
     htmlFiles: {
-        files: [ 'html/**/*.html' ],
+        files: [ '<%= config.htmlDir %>/**/*.html' ],
         tasks: ['includes:html'],
-        options: {
+        options:{
+            atBegin:true,
+//            spawn: false,
             reload: true
         }
     }

@@ -4,7 +4,7 @@ module.exports = {
     },
     your_target: {
         files: {
-            'app/css/': ['app/css/*.css']
+            "<%= config.cssDir %>": ['<%= config.cssDir %>/*.css']
         }
     }
 };
