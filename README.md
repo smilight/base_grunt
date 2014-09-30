@@ -9,7 +9,7 @@ base_grunt template for front end
 
 + Install Ruby and make allowed thru terminal. Ruby Windows [download link](http://rubyinstaller.org/downloads/) (x86 and x64). Test it: type in terminal ```gem -v```;
 
-+ Open terminal in your IntelliJ editor (```Alt + F12```);
++ Open terminal in your IntelliJ editor ```Alt + F12```;
 Install grunt globally.  Type in terminal ```npm install -g grunt-cli```. Test it: type in terminal ```grunt -V```. [More info about GrungJs](http://gruntjs.com/) ;
 
 + Install Compass and Sass. Type in terminal ```gem install compass --pre``` (pre release for work with BEM and source maps). Test it ```compass -v```. Default sass and compass config file for using compass without Grunt “config.rb”. [More info about Compass](http://compass-style.org/). [More info about SASS](http://sass-lang.com/);
@@ -36,42 +36,43 @@ Default grunt configuration “gruntfile.js”. For more settings or to add plug
    - 'compress:main' (*place compiled project to zip file with ```projectName``` name*)
 
 ##### validate:
-   - 'validation'
-   - 'jshint'
-   - 'csslint'
+   - 'validation' (*html validation*)
+   - 'jshint' (*js validation*)
+   - 'csslint' (*css validation*)
+
+   *all validation report at ```reportDir```*
 
 ##### postcss:
-   - 'compass:out'
-   - 'csscomb:css'
-   - 'csso:compress'
-   - 'cmq'
+   - 'compass:out' (*compile sass files from ```sassDir``` to ```cssDir```*)
+   - 'csscomb:css' (*sorting css properties in *.css files from ``cssDir````*)
+   - 'csso:compress' (*compressing css file*)
+   - 'cmq' (*place compiled project to zip file with ```projectName``` name*)
 
 ##### tozip:
-   - 'compress:main'
+   - 'compress:main' (*place compiled project to zip file with ```projectName``` name*)
 
 
 
 ### Packages
 
-- grunt-bower-install
-- grunt-bower-task
-- grunt-combine-media-queries
-- grunt-contrib-clean
-- grunt-contrib-compass
-- grunt-contrib-compress
-- grunt-contrib-csslint
-- grunt-contrib-imagemin
-- grunt-contrib-jshint
-- grunt-contrib-watch
-- grunt-csscomb
-- grunt-csso
-- grunt-html-validation
-- grunt-includes
-- grunt-text-replace
-- grunt-version-copy-bower-components
-- grunt-wiredep
-- jshint-stylish
-- load-grunt-config
+- [grunt-bower-task](https://github.com/stephenplusplus/grunt-wiredep)
+- [grunt-combine-media-queries](https://github.com/johncashmore/grunt-combine-media-queries)
+- [grunt-contrib-clean](https://github.com/gruntjs/grunt-contrib-clean)
+- [grunt-contrib-compass](https://github.com/gruntjs/grunt-contrib-compass)
+- [grunt-contrib-compress](https://github.com/gruntjs/grunt-contrib-compress)
+- [grunt-contrib-csslint](https://github.com/gruntjs/grunt-contrib-csslint)
+- [grunt-contrib-imagemin](https://github.com/gruntjs/grunt-contrib-imagemin)
+- [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint)
+- [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)
+- [grunt-csscomb](https://github.com/csscomb/grunt-csscomb)
+- [grunt-csso](https://github.com/t32k/grunt-csso)
+- [grunt-html-validation](https://github.com/praveenvijayan/grunt-html-validation)
+- [grunt-includes](https://github.com/vanetix/grunt-includes)
+- [grunt-version-copy-bower-components]
+- [grunt-wiredep](https://github.com/stephenplusplus/grunt-wiredep)
+- [jshint-stylish](https://github.com/sindresorhus/jshint-stylish)
+- [load-grunt-config](https://github.com/firstandthird/load-grunt-config)
+- [time-grunt](https://github.com/sindresorhus/time-grunt)
 
 
 ### Directory Structure
