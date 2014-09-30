@@ -25,29 +25,29 @@ Default grunt configuration “gruntfile.js”. For more settings or to add plug
 - 'watch' (*watching changes for html,sass and config files*)
 
 ##### build:
-    - 'clean' (*cleaning all css and html files from ```addDir```*)
-    - 'includes:html' (*compile html files from ```htmlDir``` to ```appDir```*)
-    - 'imagemin:sprites' (*minify images for sprites*)
-    - 'compass:out' (*compile sass files from ```sassDir``` to ```cssDir```*)
-    - 'imagemin:images' (*minify all image files from ```imagesDir```*)
-    - 'csscomb:css' (*sorting css properties in *.css files from ``cssDir````*)
-    - 'cmq' (*collecting css @media queries and place it to one block*)
-    - 'csso:compress' (*compressing css file*)
-    - 'compress:main' (*place compiled project to zip file with ```projectName``` name*)
+   - 'clean' (*cleaning all css and html files from ```addDir```*)
+   - 'includes:html' (*compile html files from ```htmlDir``` to ```appDir```*)
+   - 'imagemin:sprites' (*minify images for sprites*)
+   - 'compass:out' (*compile sass files from ```sassDir``` to ```cssDir```*)
+   - 'imagemin:images' (*minify all image files from ```imagesDir```*)
+   - 'csscomb:css' (*sorting css properties in *.css files from ``cssDir````*)
+   - 'cmq' (*collecting css @media queries and place it to one block*)
+   - 'csso:compress' (*compressing css file*)
+   - 'compress:main' (*place compiled project to zip file with ```projectName``` name*)
 
 ##### validate:
-    - 'validation'
-    - 'jshint'
-    - 'csslint'
+   - 'validation'
+   - 'jshint'
+   - 'csslint'
 
 ##### postcss:
-    - 'compass:out'
-    - 'csscomb:css'
-    - 'csso:compress'
-    - 'cmq'
+   - 'compass:out'
+   - 'csscomb:css'
+   - 'csso:compress'
+   - 'cmq'
 
 ##### tozip:
-    - 'compress:main'
+   - 'compress:main'
 
 
 
