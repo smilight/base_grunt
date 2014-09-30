@@ -21,19 +21,19 @@ Default grunt configuration “gruntfile.js”. For more settings or to add plug
 
 ### Available tasks
 
-default:
-    - 'watch'
+##### default:
+- 'watch' (*watching changes for html,sass and config files*)
 
 ##### build:
-    - 'clean'
-    - 'includes:html'
-    - 'imagemin:sprites'
-    - 'compass:out'
-    - 'imagemin:images'
-    - 'csscomb:css'
-    - 'cmq'
-    - 'csso:compress'
-    - 'compress:main'
+    - 'clean' (*cleaning all css and html files from ```addDir```*)
+    - 'includes:html' (*compile html files from ```htmlDir``` to ```appDir```*)
+    - 'imagemin:sprites' (*minify images for sprites*)
+    - 'compass:out' (*compile sass files from ```sassDir``` to ```cssDir```*)
+    - 'imagemin:images' (*minify all image files from ```imagesDir```*)
+    - 'csscomb:css' (*sorting css properties in *.css files from ``cssDir````*)
+    - 'cmq' (*collecting css @media queries and place it to one block*)
+    - 'csso:compress' (*compressing css file*)
+    - 'compress:main' (*place compiled project to zip file with ```projectName``` name*)
 
 ##### validate:
     - 'validation'
@@ -97,31 +97,31 @@ your aplication directory where will be all compiled files
 ####   reportDir
 js,css,html validation reports directory
 
-####   images
+####   imagesDir
 images dir. where to place generated sprites
 
 #### sassfiles
 sass or scss file extension (**.scss*)
 
-#### sass
+#### sassDir
 sass files directory
 
-#### sprite
+#### spritesDir
 directory with sprite files
 
-#### css
+#### cssDir
 generated css files directory
 
-#### fonts
+#### fontsDir
 fonts directory
 
-#### scripts
+#### scriptsDir
 scripts directory
 
-#### bower_path
+#### bowerDir
 bower components directory
 
-#### htmlPath
+#### htmlDir
 non-compiled html files directory
 
 #### livereloadPort
